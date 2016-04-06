@@ -3,7 +3,7 @@
 trap "exit 0" USR1
 (
   trap "" USR1
-  exec /usr/bin/X "$@"
+  exec /usr/bin/X  -bs -core -nocursor "$@"
 ) &
 wait
 exit 1
